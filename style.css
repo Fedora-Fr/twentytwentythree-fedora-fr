@@ -1,10 +1,80 @@
 /*
-Theme Name: Twenty Twenty-Three for Fedora-Fr
+Theme Name: Fedora-Fr (Twenty Twenty-Three)
 Theme URI: https://www.fedora-fr.org
 Template: twentytwentythree
 Author: Fedora-Fr
 Author URI: https://www.fedora-fr.org
-Description: Twenty Twenty-Three for Fedora-Fr is designed to take advantage of the new design tools introduced in WordPress 6.1. With a clean, blank base as a starting point, this default theme includes ten diverse style variations created by members of the WordPress community. Whether you want to build a complex or incredibly simple website, you can do it quickly and intuitively through the bundled styles or dive into creation and full customization yourself.
+Description: Fedora-Fr is designed on Twenty Twenty-Three, to take advantage of the new design tools introduced in WordPress 6.1. With a clean, blank base as a starting point, this default theme includes ten diverse style variations created by members of the WordPress community. Whether you want to build a complex or incredibly simple website, you can do it quickly and intuitively through the bundled styles or dive into creation and full customization yourself.
 Tags: one-column,custom-colors,custom-menu,custom-logo,editor-style,featured-images,full-site-editing,block-patterns,rtl-language-support,sticky-post,threaded-comments,translation-ready,wide-blocks,block-styles,accessibility-ready,blog,portfolio,news
-Version: 1.0.1679208796
+Version: 1.0.20230325
 */
+
+
+/** ---------------------------------------------------------------- Homepage */
+.home .page-title {
+    display:none;
+}
+.home .content-article {
+    margin-top: 0 !important;
+}
+
+
+/** ---------------------------------------------------------- Custom classes */
+.no-margin-top {
+    margin-top: 0 !important;
+}
+
+
+/** ---------------------------------------------------------------- Override */
+.wp-block-post-content a:where(:not(.wp-element-button)) {
+    color: #0056b3;
+}
+
+
+.wp-site-blocks {
+    padding-bottom: 0px;
+}
+
+/* --- Links --- */
+a:link {
+    text-decoration: none;
+}
+a::hover {
+    text-decoration: underline;
+}
+
+/* --- RSS --- */
+.wp-block-rss li {
+    padding-bottom: 15px;
+  list-style: disc;
+  margin-left: 15px;
+}
+
+/* --- Recatcha --- */
+.grecaptcha-badge { visibility: hidden; }
+
+
+/** ------------------------------------------------------------------- Aside */
+.aside-right ul li {
+    text-align: right !important;
+}
+
+
+/** ------------------------------------------------------------------- Footer */
+.fedorafrFooter a.fas,
+.fedorafrFooter a.fab {
+    float: left;
+    margin: 0 0.1em;
+    font-size: 4em;
+}
+
+.fedorafrFooter a.fas span,
+.fedorafrFooter a.fab span {
+    position: absolute !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+}
