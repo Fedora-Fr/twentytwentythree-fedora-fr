@@ -4,6 +4,9 @@
     "license": [
         "LGPL-2.1-only"
     ],
+    "keywords": [
+        "wordpress"
+    ],
     "authors": [
         {
             "name": "Guillaume Kulakowski",
