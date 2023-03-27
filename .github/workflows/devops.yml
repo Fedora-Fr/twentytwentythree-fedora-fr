@@ -3,12 +3,14 @@ name: DevOps
 on:
   [push, pull_request]
 
-env:
-  phpVersion: '8.1'
-
 jobs:
   test:
     runs-on: ubuntu-latest
+    name: Test
+
+    strategy:
+      matrix:
+        php-version: [ 8.1, 8.2 ]
 
     steps:
     - name: Git checkout
@@ -17,7 +19,7 @@ jobs:
     - name: Setup PHP
       uses: shivammathur/setup-php@master
       with:
-        php-version: ${{ env.phpVersion }}
+        php-version: ${{ matrix.php-version }}
 
     - name: Validate composer.json and composer.lock
       run: composer validate --strict
