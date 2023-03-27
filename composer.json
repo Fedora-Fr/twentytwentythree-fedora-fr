@@ -1,6 +1,9 @@
 {
     "name": "fedora-fr/twentytwentythree-fedora-fr",
     "description": "Fedora-Fr is designed on Twenty Twenty-Three, to take advantage of the new design tools introduced in WordPress 6.1.",
+    "license": [
+        "LGPL-2.1-only"
+    ],
     "authors": [
         {
             "name": "Guillaume Kulakowski",
