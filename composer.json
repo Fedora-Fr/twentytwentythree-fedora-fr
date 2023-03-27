@@ -25,7 +25,7 @@
         }
     },
     "scripts": {
-        "test:phpcs": "vendor/bin/phpcs --standard=WordPress *.php",
+        "test:phpcs": "vendor/bin/phpcs --standard=WordPress *.php *.css",
         "test": [
             "@test:phpcs"
         ]

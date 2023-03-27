@@ -12,42 +12,42 @@ Version: 1.0.20230325
 
 /** ---------------------------------------------------------------- Homepage */
 .home .page-title {
-    display:none;
+	display:none;
 }
 .home .content-article {
-    margin-top: 0 !important;
+	margin-top: 0 !important;
 }
 
 
 /** ---------------------------------------------------------- Custom classes */
 .no-margin-top {
-    margin-top: 0 !important;
+	margin-top: 0 !important;
 }
 
 
 /** ---------------------------------------------------------------- Override */
 .wp-block-post-content a:where(:not(.wp-element-button)) {
-    color: #0056b3;
+	color: #0056b3;
 }
 
 
 .wp-site-blocks {
-    padding-bottom: 0px;
+	padding-bottom: 0px;
 }
 
 /* --- Links --- */
 a:link {
-    text-decoration: none;
+	text-decoration: none;
 }
 a::hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 /* --- RSS --- */
 .wp-block-rss li {
-    padding-bottom: 15px;
-  list-style: disc;
-  margin-left: 15px;
+	padding-bottom: 15px;
+	list-style: disc;
+	margin-left: 15px;
 }
 
 /* --- Recatcha --- */
@@ -56,25 +56,25 @@ a::hover {
 
 /** ------------------------------------------------------------------- Aside */
 .aside-right ul li {
-    text-align: right !important;
+	text-align: right !important;
 }
 
 
 /** ------------------------------------------------------------------- Footer */
 .fedorafrFooter a.fas,
 .fedorafrFooter a.fab {
-    float: left;
-    margin: 0 0.1em;
-    font-size: 4em;
+	float: left;
+	margin: 0 0.1em;
+	font-size: 4em;
 }
 
 .fedorafrFooter a.fas span,
 .fedorafrFooter a.fab span {
-    position: absolute !important;
-    border: 0 !important;
-    height: 1px !important;
-    width: 1px !important;
-    padding: 0 !important;
-    overflow: hidden !important;
-    clip: rect(0, 0, 0, 0) !important;
+	position: absolute !important;
+	border: 0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	padding: 0 !important;
+	overflow: hidden !important;
+	clip: rect(0, 0, 0, 0) !important;
 }
