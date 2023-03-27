@@ -1,0 +1,30 @@
+{
+    "name": "fedora-fr/twentytwentythree-fedora-fr",
+    "description": "Fedora-Fr is designed on Twenty Twenty-Three, to take advantage of the new design tools introduced in WordPress 6.1.",
+    "authors": [
+        {
+            "name": "Guillaume Kulakowski",
+            "email": "guillaume@kulakowski.fr"
+        },
+        {
+            "name": "Nicolas Berrehouc",
+            "email": "nberrehouc@free.fr"
+        }
+    ],
+    "autoload": {},
+    "require-dev": {
+        "squizlabs/php_codesniffer": "*",
+        "wp-coding-standards/wpcs": "dev-develop"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "scripts": {
+        "test:phpcs": "vendor/bin/phpcs --standard=WordPress *.php",
+        "test": [
+            "@test:phpcs"
+        ]
+    }
+}
