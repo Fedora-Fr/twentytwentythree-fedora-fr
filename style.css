@@ -64,8 +64,8 @@ a::hover {
 .fedorafrFooter a.fas,
 .fedorafrFooter a.fab {
 	float: left;
-	margin: 0 0.1em;
-	font-size: 4em;
+	margin: 0;
+	font-size: 3.6em;
 }
 
 .fedorafrFooter a.fas span,
